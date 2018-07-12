@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PUNK-API app</string>
+    <string name="title">title</string>
+    <string name="button_text" />
+    <string name="backArrow"><![CDATA[<-]]></string>
+    <string name="nextArrow"><![CDATA[->]]></string>
+</resources>
