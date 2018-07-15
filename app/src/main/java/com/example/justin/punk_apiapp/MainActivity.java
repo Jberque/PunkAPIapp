@@ -321,7 +321,12 @@ public class MainActivity extends AppCompatActivity  {
                     calla.enqueue(new Callback<List<Beer>>() {
                         @Override
                         public void onResponse(Call<List<Beer>> calla, Response<List<Beer>> response) {
-                            generateDataList(response.body());
+							try{
+								generateDataList(response.body());
+							}catch(NullPointerException e){
+								Toast.makeText(mainActivity.this,"une érreur est survenue")
+							}	
+
                         }
                         @Override
                         public void onFailure(Call<List<Beer>> calla, Throwable t) {
